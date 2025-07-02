@@ -12,7 +12,7 @@ const searchBarVariants = cva(
     variants: {
       variant: {
         header: 'bg-bg-light rounded-3xl',
-        community: 'bg-white rounded-5 border border-border',
+        community: 'bg-white rounded-5 border border-border h-8',
         detail: 'bg-primary-main100 rounded-3xl pl-14',
       },
     },
@@ -71,7 +71,7 @@ const SearchBar = ({ variant, className, ...props }: SearchInputProps) => {
       {isDetail && inputValue && (
         <button
           type='button'
-          className='absolute -translate-y-1/2 right-3 top-1/2 text-primary'
+          className='absolute right-3 top-1/2 -translate-y-1/2 text-primary'
           onClick={() => setInputValue('')}
         >
           <Icon name='CLOSE' size={13} />
