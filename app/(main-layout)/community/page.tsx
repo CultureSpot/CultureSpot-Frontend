@@ -14,9 +14,11 @@ const User = {
 const Page = () => {
   return (
     <div className='px-10 pt-5'>
-      <h3 className='font-paperlogy text-[22px] font-normal'>커뮤니티</h3>
+      <h3 className='select-none font-paperlogy text-[22px] font-normal'>
+        커뮤니티
+      </h3>
       <div className='flex'>
-        <div className='ml-auto'>
+        <div className='ml-auto select-none'>
           <SearchBar variant='community' />
         </div>
       </div>
